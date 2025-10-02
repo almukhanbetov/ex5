@@ -84,10 +84,10 @@ metadata:
 spec:
   tls:                                 # TLS сертификат для HTTPS
     - hosts:
-        - ex5.compnet.kz        # Домен для приложения
+        - nur.garant.kz        # Домен для приложения
       secretName: ex5-tls       # Секрет, куда cert-manager положит сертификат
   rules:                               # Правила маршрутизации
-    - host: ex5.compnet.kz
+    - host: nur.garant.kz
       http:
         paths:
           - path: /                    # Все запросы по /
